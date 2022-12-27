@@ -1,6 +1,7 @@
-import Costs from "./components/Costs";
+import Costs from "./components/Costs/Costs";
+// import React from "react";
 
-function App() {
+const App = () => {
     const costs = [
         {
             date: new Date(2021,2,12),
@@ -19,6 +20,11 @@ function App() {
         },
     ]
 
+    //ToDo: Old version React code
+
+    // return  React.createElement('div', {},
+    //         React.createElement('h1', {}, 'React-app-task'),
+    //         React.createElement(Costs, {costs: costs}))
 
   return (
     <div>
@@ -26,6 +32,6 @@ function App() {
         <Costs costs={costs}></Costs>
     </div>
   );
-}
+};
 
 export default App;
