@@ -1,4 +1,5 @@
 import Costs from "./components/Costs/Costs";
+import NewCost from "./components/NewCost/NewCost";
 // import React from "react";
 
 const App = () => {
@@ -28,7 +29,7 @@ const App = () => {
 
   return (
     <div>
-        <h1>React-app-task</h1>
+        <NewCost></NewCost>
         <Costs costs={costs}></Costs>
     </div>
   );
